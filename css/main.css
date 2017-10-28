@@ -1,3 +1,8 @@
+/*@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed');*/
+/*@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:300i');*/
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Share:400,700');
+
 html, body {
 	height: 100%;
 	width: 100%;
@@ -23,4 +28,39 @@ html, body {
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     background-size: cover; 
+    filter: grayscale(100%);
+}
+
+nav {
+	height: 3.5em;
+	width: 100%;
+	background-color: black;
+
+}
+
+
+
+a {
+	font-family: 'Fira Sans Condensed', sans-serif;
+	text-decoration: none;
+	color: white;
+	margin-left: 2.5em;
+	vertical-align: middle;
+}
+
+a#logo {
+	font-size: 40px;
+	margin: 1em;
+}
+
+h1 {
+	font-family: 'Share', cursive;
+	color: white;
+	font-size: 18em;
+	display: flex;
+	justify-content: center;
+}
+
+#padding-delete {
+	padding: 0;
 }
