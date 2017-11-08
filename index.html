@@ -2,43 +2,84 @@
 <html>
 <head>
 	<title>Fitness App Mock</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/thimble.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-	<div class="containter-fluid" style="height: 100%; width: 100%;">
-		<div class="row">
-			<div class="col" id="padding-delete">
-				<nav class="navbar navbar-expand-lg">
-	  				<a class="navbar-brand" href="#">
-	  					<i class="fa fa-diamond" aria-hidden="true"></i>
-	  				</a>
-	  				<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-					    <div class="navbar-nav">
-					      <a class="nav-item nav-link" href="#">LIFT</a>
-					      <a class="nav-item nav-link" href="#">RUN</a>
-					      <a class="nav-item nav-link" href="#">JUMP</a>
-					      <a class="nav-item nav-link" href="#">STRIVE</a>
-					    </div>
-					</div>
-				</nav>
-			</div>
+		<div id="black-overlay">
+			<video playsinline autoplay muted poster="images/Workout.jpg" id="hero-vid"> 
+				<source src="video/Workout.mp4" type="video/mp4"> 
+			</video>
 		</div>
 
-			<div id="black-overlay">
-				<h1>STRIVE</h1>
-				<video playsinline autoplay muted loop poster="images/Workout.jpg" id="hero-vid"> <!-- this img will be replaced by video once it loads -->
-					<source src="video/Workout.webm" type="video/webm"> <!-- put the webm first bc of bug in Chrome, wont play after mp4 -->
-					<source src="video/Workout.mp4" type="video/mp4">
-				</video>
-			</div>
+	<div class="row" id="mission-statement">
+		<div class="cell no-padding">
+			<img src="images/back.jpg">
+		</div>
+		<div class="cell">
+			<h1 class="h1 text-center">Our Mission</h1>
+			<p>Hot chicken cred art party, helvetica next level ennui brooklyn adaptogen microdosing drinking vinegar. Twee selfies hammock edison bulb snackwave kombucha. Shoreditch hashtag mumblecore, lo-fi +1 organic tofu gluten-free kinfolk tattooed franzen direct trade pug pour-over. Celiac godard migas viral. Woke street art try-hard cray hoodie vape yuccie readymade +1.</p>
+			<p>Sartorial kitsch listicle, polaroid pork belly deep v yr tousled you probably haven't heard of them mixtape salvia direct trade irony. Leggings bitters tattooed, wayfarers biodiesel lo-fi retro deep v ramps meggings vinyl shaman banjo. Pabst humblebrag hot chicken photo booth. Chartreuse pug lyft air plant chambray twee green juice offal edison bulb single-origin coffee knausgaard readymade cloud bread hoodie vaporware.</p>
 		</div>
 	</div>
+	<div class="row" id="feature-header">
+		<div class="cell">
+			<h1 class="h1 text-center">We Stand a Cut Above the Rest</h1>
+		</div>
+	</div>
+	<div class="row" id="feature-set">
+		<div class="cell">
+			<div class="circle"></div>
+			<h3 class="h3">Feature</h3>
+			<p class="feature-p">Venmo chambray glossier, chia occupy lyft man bun brooklyn unicorn umami cloud bread.</p>
+		</div>
+		<div class="cell">
+			<div class="circle"></div>
+			<h3 class="h3">Feature</h3>
+			<p class="feature-p">Venmo chambray glossier, chia occupy lyft man bun brooklyn unicorn umami cloud bread.</p>
+		</div>
+		<div class="cell">
+			<div class="circle"></div>
+			<h3 class="h3">Feature</h3>
+			<p class="feature-p">Venmo chambray glossier, chia occupy lyft man bun brooklyn unicorn umami cloud bread.</p>
+		</div>
+	</div>
+	<div class="row" id="img-section1">
+		<div class="cell no-padding" id="one">
+			<!-- <img src="images/man.jpg"> -->
+			<h1 class="h1">Header</h1>
+		</div>
+		<div class="cell no-padding">
+			<img src="images/womanMirror.jpg">
+		</div>
+	</div>
+	<div class="row" id="img-section2">
+		<div class="cell no-padding">
+			<img src="images/womanPress.jpg">
+		</div>
+		<div class="cell no-padding">
+			<img src="images/manArms.jpg">
+		</div>
+	</div>
+	<div class="row" id="sign-up">
+		<div class="cell">
+			<h2 class="h2">Still not convinced?</h2>
+		</div>
+		<div class="cell">
+			<input type="text" name="emailSubmit">
+			<a href="#" class="button ghost">Submit</a>
+		</div>
+	</div>
+	<div class="row" id="footer">
+		<div class="cell"></div>
+	</div>
+	
+
 <script src="https://use.fontawesome.com/b93a2f4373.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
+
 </body>
 </html>
