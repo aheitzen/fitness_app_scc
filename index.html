@@ -1,27 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8"></meta>
 	<title>Fitness App Mock</title>
 	<link href="images/favicon.ico" rel="icon" type="image/x-icon" />
-	<link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Gentium+Basic|Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/thimble.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
+	<div class="row" id="hero-section">
+		<div class="cell" id="hero-land">
+			<div class="hero-text">
+				<img id="hero-logo" src="images/INTELLIFIT copy.png">
+				<h4 style="margin-left: 170px;">YOUR WORKOUT, REDIFINED</h4>
+			</div>
+			<ul>
+				<li>ABOUT</li>
+				<li>HOW IT WORKS</li>
+				<li>PRICING</li>
+				<li>CONTACT</li>
+			</ul>
+			<h1 class="huge">Data driven workouts curated by your own personal AI.</h1>
+		</div>
+		<div class="cell no-padding">
+			<div id="black-overlay">
+				<video playsinline autoplay muted poster="images/Workout.jpg" id="hero-vid"> 
+					<source src="video/Workout.mp4" type="video/mp4"> 
+				</video>
+			</div>
+		</div>
+<!-- 		<div class="cell no-padding">
 		<div id="black-overlay">
 			<video playsinline autoplay muted poster="images/Workout.jpg" id="hero-vid"> 
 				<source src="video/Workout.mp4" type="video/mp4"> 
 			</video>
+			<div class="header">
+				<ul>
+					<li><img class="main-icon" src="images/mainIcon.png"></li>
+					<li>How it works</li>
+					<li>Contact</li>
+					<li><a href="#" class="button raised">Raised Button</a></li>
+				</ul>
+			</div>
+			<div class="hero-text">
+				<img id="hero-logo" src="images/INTELLIFIT copy.png">
+				<h4>YOUR WORKOUT, REDIFINED</h4>
+			</div>
 		</div>
-
+		</div> -->
+	</div>
+	<div class="row" id="test-header">
+		<div class="cell">
+			<h4>Trusted by software titans and fitness experts</h4>
+		</div>
+	</div>
+	<div class="row" id="partnerships">
+		<div class="cell center">
+			<img class="partnerImg" src="images/purpleNike.png">
+		</div>
+		<div class="cell center">
+			<img class="partnerImg" src="images/amazon.png">
+		</div>
+		<div class="cell center">
+			<img class="partnerImg" src="images/adidas copy.png">
+		</div>
+		<div class="cell center">
+			<img class="partnerImg" src="images/google copy.png">
+		</div>
+	</div>
 	<div class="row" id="mission-statement">
 		<div class="cell no-padding">
-			<img src="images/back.jpg">
+			<img class="bw-img" src="images/back.jpg">
 		</div>
 		<div class="cell">
-			<h1 class="h1 text-center">Our Mission</h1>
-			<p>Hot chicken cred art party, helvetica next level ennui brooklyn adaptogen microdosing drinking vinegar. Twee selfies hammock edison bulb snackwave kombucha. Shoreditch hashtag mumblecore, lo-fi +1 organic tofu gluten-free kinfolk tattooed franzen direct trade pug pour-over. Celiac godard migas viral. Woke street art try-hard cray hoodie vape yuccie readymade +1.</p>
-			<p>Sartorial kitsch listicle, polaroid pork belly deep v yr tousled you probably haven't heard of them mixtape salvia direct trade irony. Leggings bitters tattooed, wayfarers biodiesel lo-fi retro deep v ramps meggings vinyl shaman banjo. Pabst humblebrag hot chicken photo booth. Chartreuse pug lyft air plant chambray twee green juice offal edison bulb single-origin coffee knausgaard readymade cloud bread hoodie vaporware.</p>
+			<h4 class="h4" id="sub-h4">OUR MISSION</h4>
+			<h3 style="margin-top: 0; margin-left: 55px;">CHANGE YOUR WORKOUT.</h3> 
+			<h3 style="margin-top: 0; margin-left: 280px;">CHANGE YOUR LIFE.</h3>
+			<p>Intellifit offers state of the art AI coaching and data tracking to keep you accountable, motivated, and always reaching higher.</p>
+			<p>Rooted in data analytics and machine learning, our AI will track your progress and learn which workouts will propell you to your optimal level of success.</p>
+			<p>Coupled with app integration and backed by our partners Intellifit blah blah blah blah.</p>
 		</div>
 	</div>
 	<div class="row" id="feature-header">
@@ -46,10 +104,10 @@
 			<p class="feature-p">Venmo chambray glossier, chia occupy lyft man bun brooklyn unicorn umami cloud bread.</p>
 		</div>
 	</div>
-	<div class="row" id="img-section1">
+<!-- 	<div class="row" id="img-section1">
 		<div class="cell no-padding" id="one">
-			<!-- <img src="images/man.jpg"> -->
-			<h1 class="h1">Header</h1>
+			<! <img src="images/man.jpg"> -->
+<!-- 			<h1 class="h1">Header</h1>
 		</div>
 		<div class="cell no-padding">
 			<img src="images/womanMirror.jpg">
@@ -62,18 +120,58 @@
 		<div class="cell no-padding">
 			<img src="images/manArms.jpg">
 		</div>
-	</div>
-	<div class="row" id="sign-up">
-		<div class="cell">
-			<h2 class="h2">Still not convinced?</h2>
+	</div> --> 
+	<div class="row align-center" id="sign-up">
+		<div class="cell seven">
+			<h2>Join our newsletter for tips, workout advice, and special promotions</h2>
 		</div>
-		<div class="cell">
-			<input type="text" name="emailSubmit">
-			<a href="#" class="button ghost">Submit</a>
+		<div class="cell five">
+			<input type="email" name="emailSubmit" placeholder="Enter your email here">
+			<a href="#" class="button"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+		</div>
+	</div>
+	<div class="row" id="social-nav">
+		<div class="cell twelve justify-center">
+			<h3 style="text-align: center;">CONNECT &nbsp;&#8226; &nbsp;COMPETE&nbsp; &#8226;&nbsp; CONQUER</h3>
+		</div>
+		<div class="cell twelve" style="text-align: center;">
+			<i class="fa fa-facebook-square social" aria-hidden="true"></i>
+			<i class="fa fa-twitter-square social" aria-hidden="true"></i>
+			<i class="fa fa-snapchat-square social" aria-hidden="true"></i>
 		</div>
 	</div>
 	<div class="row" id="footer">
-		<div class="cell"></div>
+		<div class="cell three">
+			<img src="images/map.png">
+		</div>
+		<div class="cell three">
+			<h4>Contact Us</h4>
+			<p class="footer-text"><strong>Phone:</strong> (206) 867-5309</p>
+			<p class="footer-text"><strong>Email:</strong> Intellifit@gmail.com</p>
+			<p class="footer-text"><strong>Adress:</strong> 12 Belltown Way, Seattle WA, 98101</p>
+		</div>
+		<div class="cell three">
+			<h4>About</h4>
+			<p class="footer-text">Home</p>
+			<p class="footer-text">Price Tiers</p>
+			<p class="footer-text">Partner</p>
+			<p class="footer-text">Career</p>
+		</div>
+		<div class="cell three">
+			<h4>Our Partners</h4>
+			<p class="footer-text">Nike</p>
+			<p class="footer-text">Tableau Software</p>
+			<p class="footer-text">Everlast</p>
+			<p class="footer-text">Scry</p>
+		</div>
+	</div>
+	<div class="row align-center" id="sub-footer">
+		<div class="cell six">
+			<p class="social-text">&COPY; Intellifit 2017</p>
+		</div>
+		<div class="cell six">
+			<p class="social-text" id="pull-right">Made tough in Seattle, WA</p>
+		</div>
 	</div>
 	
 

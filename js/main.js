@@ -1,9 +1,9 @@
 var currentVideo = 0
 var videos = [
-	{
-		src: 'video/pullUp.mp4',
-		type: 'video/mp4'
-	},
+	// {
+	// 	src: 'video/pullUp.mp4',
+	// 	type: 'video/mp4'
+	// },
 		{
 		src: 'video/Workout.mp4',
 		type: 'video/mp4'
