@@ -19,6 +19,11 @@ html, body {
 	margin: 0;
 }
 
+#featured {
+	/*background-color: var(--primary-color);*/
+	background-image: url("../images/black_thread.png");
+}
+
 .cell.center {
 	display: flex;
     flex-flow: row nowrap;
@@ -66,9 +71,12 @@ html, body {
 	text-transform: uppercase;
 	font-family: var(--header-font);
 	font-size: 60px;
+	margin-left: 25px;
+	text-shadow: 0 0 3px #be26fb, 0 0 7px #be26fb, 0 0 20px #be26fb, 0 0 30px #be26fb, 0 0 40px #be26fb, 0 0 60px #be26fb;
 }
 
 ul {
+	margin-top: 50px;
 	
 
 }
@@ -149,6 +157,7 @@ h1 {
 	color: var(--secondary-color);
 	font-family: 'Fira Sans Condensed', sans-serif;
 	padding: 20px;
+	-webkit-animation: neonPulse 2s alternate infinite;
 }
 
 h2 {
@@ -263,6 +272,7 @@ input {
 
 img#hero-logo {
 	margin-top: 60px;
+	margin-left: 40px;
 	height: auto;
 	width: 60%;
 }
@@ -309,7 +319,6 @@ p#pull-right {
 	height: auto;
 	width: 100%;
 	background-color: var(--primary-color);
-	/*background-image: url("../images/black_thread.png");*/
 }
 
 .footer-text {
@@ -325,6 +334,15 @@ p#pull-right {
 	background-color: #262626;
 }
 
+#mockup-section {
+	background-color: #880bf1;
+}
+
+.mock {
+	height: 600px;
+	width: auto;
+}
+
 @media (max-width: 420px) {
 	p#pull-right.social-text {
 		float: none;
@@ -334,3 +352,4 @@ p#pull-right {
 		margin-bottom: 1em;
 	}
 }
+
