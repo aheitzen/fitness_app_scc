@@ -25,3 +25,22 @@ videoElement.on('ended',function(){
 		currentVideo++;
 	}
 });
+
+var myArray = ['Intellifit keeps me smart and strong. <span><br> - Jerry Dale</span>','I love the app reminders on my phone, really keeps me on track.<span><br> - Kim Smith</span>' ];
+var currentIndex = 0;
+var selector = $('#selector');
+var timer = setInterval(function(){
+
+	
+	selector.animate({left: '-100%'}, 500, function () { 
+	    selector.hide();
+	    selector.html(myArray[currentIndex]);
+	    selector.css({left: '100%'});
+	    selector.show();
+	    selector.animate({left: '0'}, 500);
+	});
+	currentIndex++;
+	if (currentIndex == myArray.length) {
+		currentIndex = 0;
+	}
+ }, 5000);

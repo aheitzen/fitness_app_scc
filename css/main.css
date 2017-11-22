@@ -33,7 +33,7 @@ html, body {
 }
 
 #black-overlay {
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.1);
     height: 100%;
     width: 100%;
     position: relative;
@@ -146,6 +146,10 @@ li {
 	text-align: left;
 }
 
+h3#sub-h4 {
+	text-align: center;
+}
+
 
 .bw-img {
  	filter: grayscale(100%);
@@ -172,8 +176,56 @@ h3 {
 	margin-top: 30px;
 }
 
+.features-headers {
+	margin-left: 20px;
+	color: #880bf1;
+	font-family: var(--header-font);
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
 .h3 {
 	text-align: center;
+}
+
+i.fa.fa-quote-right, i.fa.fa-quote-left {
+	text-align: center;
+	width: 100%;
+	color: #880bf1;
+	font-size: 30px;
+	
+}
+
+i.fa.fa-quote-right {
+	margin-bottom: 30px;
+}
+
+i.fa.fa-quote-left {
+	margin-top: 30px;
+}
+
+#parent-selector {
+	overflow: hidden;
+}
+
+#selector {
+	color: var(--secondary-color);
+	font-family: var(--paragraph-font);
+	text-transform: uppercase;
+	position: relative;
+	text-align: center;
+	margin: 40px;
+	font-size: 25px;
+
+}
+
+span {
+	font-style: italic;
+
+}
+
+.feature-paragraph {
+	font-family: var(--paragraph-font);
 }
 
 h4 {
@@ -343,6 +395,15 @@ p#pull-right {
 	width: auto;
 }
 
+.featured-images {
+	height: 200px;
+	width: 200px;
+}
+
+.testimonials {
+	background-color: var(--primary-color);
+}
+
 @media (max-width: 420px) {
 	p#pull-right.social-text {
 		float: none;
@@ -350,6 +411,15 @@ p#pull-right {
 	}
 	h2, input {
 		margin-bottom: 1em;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
 	}
 }
 
