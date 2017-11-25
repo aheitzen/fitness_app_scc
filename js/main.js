@@ -26,18 +26,16 @@ videoElement.on('ended',function(){
 	}
 });
 
-var myArray = ['Intellifit keeps me smart and strong. <span><br> - Jerry Dale</span>','I love the app reminders on my phone, really keeps me on track.<span><br> - Kim Smith</span>' ];
+var myArray = ['Intellifit keeps me smart and strong. <span><img class="test-img" src="images/two.png"> - Kim Dale</span>','I love the app reminders on my phone, really keeps me on track.<span><img class="test-img" src="images/three.png"> - Larry Smith</span>' ];
 var currentIndex = 0;
 var selector = $('#selector');
 var timer = setInterval(function(){
-
-	
-	selector.animate({left: '-100%'}, 500, function () { 
+		selector.animate({left: '-100%'}, 700, function () { 
 	    selector.hide();
 	    selector.html(myArray[currentIndex]);
 	    selector.css({left: '100%'});
 	    selector.show();
-	    selector.animate({left: '0'}, 500);
+	    selector.animate({left: '0'}, 700);
 	});
 	currentIndex++;
 	if (currentIndex == myArray.length) {
