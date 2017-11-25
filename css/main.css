@@ -75,22 +75,11 @@ html, body {
 	text-shadow: 0 0 3px #be26fb, 0 0 7px #be26fb, 0 0 20px #be26fb, 0 0 30px #be26fb, 0 0 40px #be26fb, 0 0 60px #be26fb;
 }
 
-ul {
-	margin-top: 50px;
-	
-
-}
-
 li {
-	list-style-type: none;
-	display: inline;
 	font-family: var(--paragraph-font);
 	margin-left: 30px;
-	/*display: block;*/
-    /*margin: 0;*/
-    
-/*    padding: 10px;
-    box-sizing: border-box;*/
+	display:inline-block;
+    vertical-align:middle;
 }
 
 .hero-text {
@@ -157,11 +146,13 @@ h3#sub-h4 {
  	width: 100%;
  }
 
+.download-img {
+	height: 50px;
+}
+
 h1 {
 	color: var(--secondary-color);
-	font-family: 'Fira Sans Condensed', sans-serif;
-	padding: 20px;
-	-webkit-animation: neonPulse 2s alternate infinite;
+
 }
 
 h2 {
@@ -174,6 +165,20 @@ h3 {
 	font-size: 30px;
 	font-family: var(--paragraph-font);
 	margin-top: 30px;
+}
+
+#top-nav {
+	background-color: var(--primary-color);
+}
+
+.nav-hover:hover {
+	color: #880bf1;
+	cursor: pointer;
+}
+
+#menu_icon {
+	height: 30px;
+	margin: 20px;
 }
 
 .features-headers {
@@ -402,10 +407,11 @@ p#pull-right {
 
 .testimonials {
 	background-color: var(--primary-color);
+
 }
 
 .test-img {
-	height: 100px;
+	height: 70px;
 	margin: 0 auto;
 	display: block;
 	border-radius: 50%;
@@ -413,6 +419,18 @@ p#pull-right {
 	margin-bottom: 25px;
 	filter: grayscale(100%);
 
+}
+
+#movie-section {
+	background-color: pink;
+	height: 200px;
+	width: 200px;
+}
+
+#pricing-section {
+	background-color: blue;
+	height: 200px;
+	width: 200px;
 }
 
 @media (max-width: 420px) {

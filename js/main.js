@@ -42,3 +42,28 @@ var timer = setInterval(function(){
 		currentIndex = 0;
 	}
  }, 5000);
+
+
+
+$(document).ready(function (){
+	$("#about").click(function (){
+    	$('html, body').animate({
+        	scrollTop: $("#mission-statement").offset().top
+        }, 1000);
+  	});
+  	$("#movie").click(function (){
+    	$('html, body').animate({
+        	scrollTop: $("#movie-section").offset().top
+        }, 1000);
+  	});
+    $("#contact").click(function (){
+      $('html, body').animate({
+          scrollTop: $("#social-nav").offset().top
+        }, 1000);
+    });
+    $("#pricing").click(function (){
+      $('html, body').animate({
+          scrollTop: $("#pricing-section").offset().top
+        }, 1000);
+    });
+});
