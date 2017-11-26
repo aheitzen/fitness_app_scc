@@ -1,30 +1,28 @@
-var currentVideo = 0
-var videos = [
-	// {
-	// 	src: 'video/pullUp.mp4',
-	// 	type: 'video/mp4'
-	// },
-		{
-		src: 'video/Workout.mp4',
-		type: 'video/mp4'
-	}
-]
+// VIDEO ROTATOR CODE
 
-var videoElement = $('video')
-var sourceElement = $('video source')
+// var currentVideo = 0
+// var videos = [
+// 		{
+// 		src: 'video/Workout.mp4',
+// 		type: 'video/mp4'
+// 	}
+// ]
 
-videoElement.on('ended',function(){
-	sourceElement.attr('src', videos[currentVideo].src)
-	sourceElement.attr('type', videos[currentVideo].type)
-	videoElement.get(0).load();
-	videoElement[0].play();
+// var videoElement = $('video')
+// var sourceElement = $('video source')
+
+// videoElement.on('ended',function(){
+// 	sourceElement.attr('src', videos[currentVideo].src)
+// 	sourceElement.attr('type', videos[currentVideo].type)
+// 	videoElement.get(0).load();
+// 	videoElement[0].play();
 	
-	if (currentVideo >= videos.length - 1) {
-		currentVideo = 0;
-	} else {
-		currentVideo++;
-	}
-});
+// 	if (currentVideo >= videos.length - 1) {
+// 		currentVideo = 0;
+// 	} else {
+// 		currentVideo++;
+// 	}
+// });
 
 var myArray = ['Intellifit keeps me smart and strong. <span><img class="test-img" src="images/two.png"> - Kim Dale</span>','I love the app reminders on my phone, really keeps me on track.<span><img class="test-img" src="images/three.png"> - Larry Smith</span>' ];
 var currentIndex = 0;
@@ -64,6 +62,11 @@ $(document).ready(function (){
     $("#pricing").click(function (){
       $('html, body').animate({
           scrollTop: $("#pricing-section").offset().top
+        }, 1000);
+    });
+    $("#home-link").click(function (){
+      $('html, body').animate({
+          scrollTop: $("#top-nav").offset().top
         }, 1000);
     });
 });
