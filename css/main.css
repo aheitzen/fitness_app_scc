@@ -20,8 +20,8 @@ html, body {
 }
 
 #featured {
-	/*background-color: var(--primary-color);*/
 	background-image: url("../images/black_thread.png");
+	padding: 20px;
 }
 
 .cell.center {
@@ -41,9 +41,13 @@ html, body {
 }
 
 #hero-section {
-	height: 80%;
+	height: 98%;
 	width: auto;
 
+}
+
+.margin {
+	margin: 30px;
 }
 
 #hero-vid {
@@ -66,14 +70,6 @@ html, body {
 
 #header {
 	display: inline;
-}
-
-.huge {
-	text-transform: uppercase;
-	font-family: var(--header-font);
-	font-size: 60px;
-	margin-left: 25px;
-	text-shadow: 0 0 3px #be26fb, 0 0 7px #be26fb, 0 0 20px #be26fb, 0 0 30px #be26fb, 0 0 40px #be26fb, 0 0 60px #be26fb;
 }
 
 
@@ -123,7 +119,7 @@ html, body {
 .partnerImg {
 	max-width: 50%;
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 #sub-h4 {
@@ -235,18 +231,27 @@ h4 {
 	font-size: 18px;
 	font-family: var(--paragraph-font);
 	margin-top: 40px;
+	margin-bottom: 25px;
 	text-transform: uppercase;
 	text-align: center;
 
 }
+p#neon-purple {
+	color: #880bf1;
+	color: red;
+	text-align: center; 
+	color: white; 
+	margin-top: 180px;
+}
 
 p {
-	/*color: #880bf1;*/
 	color: var(--secondary-color);
 	margin: 20px;
     font-size: 18px;
     font-weight: 400;
 }
+
+
 
 p.feature-p {
 	text-align: center;
@@ -325,11 +330,19 @@ img#hero-logo {
 	margin: 0 auto;
 	height: auto;
 	width: 400px;
+	margin-top: 100px;
 }
 
 #hero-land {
 	position: relative;
-	background-color: black;
+	/*background-color: black;*/
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/manArms.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed; 
+	background-size: cover;
+	background-color: black; 
+
 }
 
 #hero-land:before {
@@ -428,6 +441,12 @@ p#pull-right {
 	background-color: #880bf1;
 }
 
+nav {
+	width: 100%;
+  	position: fixed;
+ 	z-index: 3;
+}
+
 .mock {
 	height: 600px;
 	width: auto;
@@ -459,7 +478,8 @@ p#pull-right {
 }
 
 ul {
-	margin-top: 25px;
+	/*margin-top: 25px;*/
+	margin: 0;
 }
 
 li#home-link {
@@ -471,6 +491,7 @@ li {
 	margin-left: 60px;
 	display:inline-block;
     vertical-align:middle;
+    color: #949292;
 }
 
 
@@ -486,6 +507,7 @@ li {
 	height: 200px;
 	width: 200px;
 }
+
 
 @media (max-width: 420px) {
 	p#pull-right.social-text {

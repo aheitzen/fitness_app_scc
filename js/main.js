@@ -41,6 +41,15 @@ var timer = setInterval(function(){
 	}
  }, 5000);
 
+var a = $("nav").offset().top;
+$(document).scroll(function(){
+    if($(this).scrollTop() > a)
+    {   
+       $('nav').css({"background": "black"});
+    } else {
+       $('nav').css({"background": "transparent"});
+    }
+});
 
 
 $(document).ready(function (){
