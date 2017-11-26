@@ -32,41 +32,13 @@ html, body {
     margin: 2em;
 }
 
-#black-overlay {
-	background-color: rgba(0, 0, 0, 0.1);
-    height: 100%;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-}
-
 #hero-section {
 	height: 98%;
 	width: auto;
 
 }
 
-.margin {
-	margin: 30px;
-}
 
-#hero-vid {
-	position: absolute;
-    top: 0;
-    left: calc(50% - 960px);
-    /*width: 100%;*/
-    height: auto;
-    z-index: -1;
-    background-size: cover; 
-    filter: grayscale(100%);
-}
-
-.main-icon {
-	height: 4em;
-	width: 4em;
-	margin: 1em;
-	filter: saturate(100%);
-}
 
 #header {
 	display: inline;
@@ -231,9 +203,10 @@ h4 {
 	font-size: 18px;
 	font-family: var(--paragraph-font);
 	margin-top: 40px;
-	margin-bottom: 25px;
+	margin-bottom: 15px;
 	text-transform: uppercase;
-	text-align: center;
+	font-weight: bold;
+	/*text-align: center;*/
 
 }
 p#neon-purple {
@@ -248,7 +221,13 @@ p {
 	color: var(--secondary-color);
 	margin: 20px;
     font-size: 18px;
-    font-weight: 400;
+    font-family: var(--paragraph-font);
+    
+}
+
+p.footer-text:hover {
+	color: var(--accent-color);
+	cursor: pointer;
 }
 
 
@@ -277,9 +256,9 @@ a.button {
 	font-family: var(--paragraph-font);
 }
 
-i.fa.fa-envelope-o {
+/*i.fa.fa-envelope-o {
 	font-size: 25px;
-}
+}*/
 
 a.button:hover {
 	color: var(--secondary-color);
@@ -391,43 +370,48 @@ p#sub-text {
 
 i.fa.fa-facebook-square {
 	color: var(--secondary-color);
-	font-size: var(--middle-font);
-	margin-top: 30px;
+	font-size: 30px;
+	margin-left: 20px;
+		margin-bottom: 20px;
+	/*margin-top: 30px;*/
 }
 
  i.fa.fa-twitter-square, i.fa.fa-snapchat-square {
 	color: var(--secondary-color);
-	font-size: var(--middle-font);
-	margin-left: 70px;
-	margin-top: 30px;
-	margin-bottom: 40px;
+	font-size: 30px;
+	margin-left: 20px;
+	text-align: center;
+/*	margin-top: 30px;*/
+	margin-bottom: 20px;
 }
 
 i.social:hover {
-	color: var(--primary-color);
+	color: var(--accent-color);
 	cursor: pointer
 }
 
 p.social-text {
-	padding: 0;
-	margin-bottom: 0;
-	margin-left: auto;
+	text-transform: uppercase;
+	font-family: var(--header-font);
+	text-align: center;
 }
 
-p#pull-right {
-	float: right;
+iframe {
+	padding: 30px;
 }
 
 #footer {
 	height: auto;
 	width: 100%;
 	background-color: var(--primary-color);
+	padding: 20px 40px 40px 40px;
 }
 
 .footer-text {
 	padding: 0;
 	margin-bottom: 0;
 	margin: 10px 0px 10px 0px;
+	font-size: 15px;
 
 }
 #sub-footer {
@@ -497,9 +481,9 @@ li {
 
 
 #movie-section {
-	background-color: pink;
-	height: 200px;
-	width: 200px;
+	background-image: url("../images/fake_brick.png")
+	/*height: 200px;
+	width: 200px;*/
 }
 
 #pricing-section {
