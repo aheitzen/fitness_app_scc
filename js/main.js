@@ -1,29 +1,3 @@
-// VIDEO ROTATOR CODE
-
-// var currentVideo = 0
-// var videos = [
-// 		{
-// 		src: 'video/Workout.mp4',
-// 		type: 'video/mp4'
-// 	}
-// ]
-
-// var videoElement = $('video')
-// var sourceElement = $('video source')
-
-// videoElement.on('ended',function(){
-// 	sourceElement.attr('src', videos[currentVideo].src)
-// 	sourceElement.attr('type', videos[currentVideo].type)
-// 	videoElement.get(0).load();
-// 	videoElement[0].play();
-	
-// 	if (currentVideo >= videos.length - 1) {
-// 		currentVideo = 0;
-// 	} else {
-// 		currentVideo++;
-// 	}
-// });
-
 var myArray = ['Intellifit keeps me smart and strong. <span><img class="test-img" src="images/two.png"> - Kim Dale</span>','I love the app reminders on my phone, really keeps me on track.<span><img class="test-img" src="images/three.png"> - Larry Smith</span>' ];
 var currentIndex = 0;
 var selector = $('#selector');
@@ -51,8 +25,12 @@ $(document).scroll(function(){
     }
 });
 
-
 $(document).ready(function (){
+	$("#home-link").click(function (){
+    	$('html, body').animate({
+        	scrollTop: $("#top-nav").offset().top
+        }, 1000);
+  	});
 	$("#about").click(function (){
     	$('html, body').animate({
         	scrollTop: $("#mission-statement").offset().top
@@ -65,17 +43,12 @@ $(document).ready(function (){
   	});
     $("#contact").click(function (){
       $('html, body').animate({
-          scrollTop: $("#social-nav").offset().top
+          scrollTop: $("#footer").offset().top
         }, 1000);
     });
     $("#pricing").click(function (){
       $('html, body').animate({
-          scrollTop: $("#pricing-section").offset().top
-        }, 1000);
-    });
-    $("#home-link").click(function (){
-      $('html, body').animate({
-          scrollTop: $("#top-nav").offset().top
+          scrollTop: $("#pricing-header").offset().top
         }, 1000);
     });
 });
