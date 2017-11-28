@@ -141,12 +141,21 @@ h3#sub-h4 {
  }
 
 .download-img {
-	height: 50px;
+	height: 60px;
+	margin-right: 30px;
+	margin-top: 30px;
+}
+
+.mock-header {
+	color: white; /*#880bf1*/
+	font-family: var(--header-font);
+	font-weight: 300;
+	font-size: 50px;
+	margin-top: 20px;
 }
 
 h1 {
 	color: var(--secondary-color);
-
 }
 
 h2 {
@@ -398,6 +407,12 @@ p#sub-text {
 	font-size: 40px;
 }
 
+.h4-center {
+	text-align: center;
+	font-family: var(--header-font);
+	font-weight: 200;
+}
+
 i.fa.fa-facebook-square {
 	color: var(--secondary-color);
 	font-size: 30px;
@@ -452,7 +467,14 @@ iframe {
 }
 
 #mockup-section {
-	background-color: #880bf1;
+	background-image: url("../images/mockBackground.png");
+	display:flex;
+	align-items: center; 
+	justify-content: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*background-color: #880bf1;*/
+  	/*background-blend-mode: luminosity;*/
 }
 
 nav {
