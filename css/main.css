@@ -19,9 +19,39 @@ html, body {
 	margin: 0;
 }
 
+.pricing-header {
+	text-align: center;
+	font-family: var(--header-font);
+	padding-top: 20px;
+	color: #880bf1;
+	font-size: 20px;
+	font-style: italic;
+	margin-top: 0;
+
+}
+
+p.pricing-list {
+	text-align: left;
+	margin: 8px;
+	font-family: var(--paragraph-font);
+	padding: 0 20px;
+	color: #949292;
+	font-size: 15px;
+}
+
+p.pricing-list:first-of-type {
+	text-align: center;
+	font-size: 28px;
+	color: var(--secondary-color);
+}
+
 #featured {
-	background-image: url("../images/black_thread.png");
+	background-image: url("../images/fake_brick.png");
 	padding: 20px;
+}
+
+#movie-header {
+	margin-top: 100px;
 }
 
 .cell.center {
@@ -315,7 +345,7 @@ img#hero-logo {
 #hero-land {
 	position: relative;
 	/*background-color: black;*/
-	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/manArms.png);
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/manArms.png);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed; 
@@ -477,19 +507,52 @@ li {
     vertical-align:middle;
     color: #949292;
 }
+.workout-header {
+	font-family: var(--header-font);
+	color: var(--secondary-color);
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 35px;
+}
 
+#pricing-header {
+	background-color: var(--primary-color);
+}
 
 
 #movie-section {
-	background-image: url("../images/fake_brick.png")
-	/*height: 200px;
-	width: 200px;*/
+	background-image: url("../images/fake_brick.png");
 }
 
-#pricing-section {
-	background-color: blue;
-	height: 200px;
-	width: 200px;
+.pricing-section {
+	background-color: var(--primary-color);
+	height: auto;
+	width: auto;
+	padding: 100px;
+}
+
+#price-silver {
+	height: 300px;
+	width: 250px;
+	background-image: url("../images/black_thread.png");
+	margin: 0 auto;
+	border-radius: 10px;
+}
+
+#price-gold {
+	height: 300px;
+	width: 250px;
+	background-image: url("../images/black_thread.png");
+	margin: 0 auto;
+	border-radius: 10px;
+}
+
+#price-platnium {
+	height: 300px;
+	width: 250px;
+	background-image: url("../images/black_thread.png");
+	margin: 0 auto;
+	border-radius: 10px;
 }
 
 
