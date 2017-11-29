@@ -586,19 +586,24 @@ li {
 	margin-left: 55px;
 }
 
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+/*}
+*/
 
-
-@media (max-width: 420px) {
+/*@media (max-width: 420px) {*/
 	.nav-hover {
 		display: none;
-
 	}
 	#home-link {
 		display: inline;
 	}
 	iframe {
 		height: auto;
-		width: 380px;
+		width: 100%;
 	}
 	.cell.center {
 		margin: 0;
@@ -611,12 +616,15 @@ li {
 	 .social-links {
 	 	margin-left: 60px;
 	 }
+	 .pricing-section {
+	 	padding: 25px 0;
+	 }
 	 #price-silver, #price-gold {
 	 	margin-bottom: 20px;
-	 	margin-left: -36px;
+	 	/*margin-left: -36px;*/
 	 }
 	 #price-platnium {
-	 	margin-left: -36px;
+	 	/*margin-left: -36px;*/
 	 }
 	 .featured-images {
 	 	display: none;
