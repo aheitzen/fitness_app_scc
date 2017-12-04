@@ -111,6 +111,10 @@ nav {
 	margin-left: 10px;
 }
 
+ul {
+	margin-bottom: 0;
+}
+
 li {
 	font-family: var(--paragraph-font);
 	margin-left: 60px;
@@ -477,8 +481,8 @@ p.social-text {
 /*MEDIA QUERIES*/
 
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
+  and (min-width: 320px) 
+  and (max-width: 480px)  
   {
 	#header-h1 {
 		font-size: 20px;
@@ -489,6 +493,9 @@ p.social-text {
 	#home-link {
 		display: inline;
 	}
+	#parent-selector {
+		height: 400px;
+	}
 	iframe {
 		height: auto;
 		width: 100%;
@@ -497,12 +504,15 @@ p.social-text {
 		margin: 0;
     	padding: 0;
 	}
+	h4.h4.sub-h4 {
+    	text-align: center;
+	}
 	 h4, .footer-text, i.fa.fa-twitter-square, i.fa.fa-snapchat-square,i.fa.fa-facebook-square  {
 	 	text-align: center;
 	 	margin-top: 25px;
 	 }
 	 .social-links {
-	 	margin-left: 60px;
+	 	text-align: center;
 	 }
 	 .pricing-section {
 	 	padding: 25px 0;
@@ -537,7 +547,8 @@ p.social-text {
 	 	display: none;
 	 }
 	 .download-img {
-	 	margin-right: 0;
-	 	margin-top: 0;
+	 	margin: 0 auto;
+    	display: flex;
+    	margin-bottom: 10px;
 	 }
 }
