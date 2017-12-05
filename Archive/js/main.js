@@ -1,4 +1,4 @@
-var myArray = ['Intellifit keeps me smart and strong. <span><img class="test-img" src="images/two.jpg"> - Kim Dale</span>','I love the app reminders on my phone, really keeps me on track.<span><img class="test-img" src="images/one.jpg"> - Larry Smith</span>' ];
+var myArray = ['Intellifit keeps me smart and strong. <span><img class="test-img" src="images/two.jpg" alt="testomonial img"> - Kim Dale</span>','I love the app reminders on my phone, really keeps me on track.<span><img class="test-img" src="images/one.jpg" alt="testomonial img"> - Larry Smith</span>' ];
 var currentIndex = 0;
 var selector = $('#selector');
 var timer = setInterval(function(){
