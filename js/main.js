@@ -13,7 +13,7 @@ var timer = setInterval(function(){
 	if (currentIndex == myArray.length) {
 		currentIndex = 0;
 	}
- }, 5000);
+ }, 5600);
 
 var a = $("nav").offset().top;
 $(document).scroll(function(){

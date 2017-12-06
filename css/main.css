@@ -15,6 +15,7 @@ html, body {
 	height: 100%;
 	width: 100%;
 	margin: 0;
+	background-color: var(--primary-color);
 }
 
 h1 {
@@ -153,7 +154,7 @@ li {
 
 #hero-land {
 	position: relative;
-	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/hero_arms.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/hero_img.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed; 
@@ -342,7 +343,7 @@ p.pricing-list:first-of-type {
 }
 
 #mockup-section {
-	background-image: url("../images/mock_background.jpg");
+	background-image: url("../images/mock-bg-img.jpg");
 	display:flex;
 	align-items: center; 
 	justify-content: center;
